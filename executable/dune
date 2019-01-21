@@ -1,0 +1,4 @@
+(executable (name PesyCStubsApp) (public_name PesyCStubsApp.exe)
+    (libraries pesy-c-stubs.lib)
+    (flags -ccopt -Wl,-no_pie -ccopt
+        /Users/manas/.esy/3___________________________________________________________________/i/gmp-8feb1deb/lib/libgmp.a)) 

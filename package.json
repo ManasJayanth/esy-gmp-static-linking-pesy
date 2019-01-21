@@ -1,0 +1,41 @@
+
+{
+  "name": "pesy-c-stubs",
+  "version": "0.0.0",
+  "description": "My Project",
+  "esy": {
+    "build": "dune build -p #{self.name}",
+    "release": {
+      "releasedBinaries": [
+        "PesyCStubsApp.exe"
+      ]
+    }
+  },
+  "buildDirs": {
+    "library": {
+      "name": "pesy-c-stubs.lib",
+      "namespace": "PesyCStubs",
+      "cNames": ["stub"]
+    },
+    "executable": {
+      "require": ["pesy-c-stubs.lib"],
+      "main": "PesyCStubsApp",
+        "name": "PesyCStubsApp.exe",
+       "flags": ["-ccopt", "-Wl,-no_pie", "-ccopt", "/Users/manas/.esy/3___________________________________________________________________/i/gmp-8feb1deb/lib/libgmp.a"]
+    }
+  },
+  "scripts": {
+    "test": "esy x TestPesyCStubs.exe"
+  },
+  "dependencies": {
+    "@opam/dune": "*",
+    "@esy-ocaml/reason": "*",
+    "refmterr": "*",
+    "ocaml": "~4.6.0",
+      "pesy": "*",
+      "gmp": "esy-packages/esy-gmp"
+  },
+  "devDependencies": {
+    "@opam/merlin": "*"
+  }
+}

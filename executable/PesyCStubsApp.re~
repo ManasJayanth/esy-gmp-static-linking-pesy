@@ -1,0 +1,4 @@
+external myCFunction: unit => int = "core";
+
+print_int(myCFunction());
+PesyCStubs.Util.foo();

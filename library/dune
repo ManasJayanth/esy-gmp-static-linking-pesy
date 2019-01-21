@@ -1,0 +1,1 @@
+(library (name PesyCStubs) (public_name pesy-c-stubs.lib) (c_names stub)) 
